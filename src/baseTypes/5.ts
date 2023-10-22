@@ -7,5 +7,4 @@ enum Literal {
   "disable",
 }
 
-let union;
-let literal: Literal;
+let union: string | number;

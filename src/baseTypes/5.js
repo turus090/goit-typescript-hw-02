@@ -8,4 +8,3 @@ var Literal;
     Literal[Literal["disable"] = 1] = "disable";
 })(Literal || (Literal = {}));
 var union;
-var literal;
