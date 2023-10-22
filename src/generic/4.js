@@ -1,6 +1,3 @@
-/*
-  Використовуйте generics та інтерфейси, щоб виправити помилку в наступних класах:
-*/
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -16,6 +13,12 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var Component = /** @class */ (function () {
+    function Component(props) {
+        this.props = props;
+    }
+    return Component;
+}());
 var Page = /** @class */ (function (_super) {
     __extends(Page, _super);
     function Page() {
@@ -26,10 +29,3 @@ var Page = /** @class */ (function (_super) {
     };
     return Page;
 }(Component));
-// Приклад використання
-var pageData = {
-    title: "Моя сторінка",
-    // Додайте інші властивості, якщо є
-};
-var page = new Page(pageData);
-page.pageInfo();
